@@ -1,4 +1,3 @@
-# hamf
 # HAMF: Hierarchical Attention-based Multi-modal Fusion for Medical Analysis
 
 ## Overview
@@ -55,30 +54,34 @@ HAMF uses a hierarchical attention mechanism to fuse multiple modalities:
 
 ### Testing
 - **`test_model.py`**: Unit tests for validating the HAMF model, including:
+  - Model initialization
+  - Forward pass validation
+  - Attention mechanism verification
+  - Model training and gradient flow tests
+  - Model checkpointing (saving/loading)
 
 ## Project Structure
-```
 HAMF/
 ├── models/
-│   ├── __init__.py
-│   ├── hamf.py            # Main model architecture
-│   ├── attention.py       # Attention mechanisms
-│   ├── trainer.py         # Training utilities
-│   ├── data_load.py       # Data loading utilities
-│   ├── metrics.py         # Evaluation metrics
-│   ├── config.py          # Configuration
-│   └── visualization.py   # Visualization tools
+│ ├── init.py
+│ ├── hamf.py # Main model architecture
+│ ├── attention.py # Attention mechanisms
+│ ├── trainer.py # Training utilities
+│ ├── data_load.py # Data loading utilities
+│ ├── metrics.py # Evaluation metrics
+│ ├── config.py # Configuration
+│ └── visualization.py # Visualization tools
 ├── tests/
-│   ├── __init__.py
-│   ├── test_model.py      # Model unit tests
-│   └── test_data.py       # Data pipeline tests
+│ ├── init.py
+│ ├── test_model.py # Model unit tests
+│ └── test_data.py # Data pipeline tests
 ├── scripts/
-│   ├── train.py           # Training script
-│   ├── evaluate.py        # Evaluation script
-│   └── visualize.py       # Visualization script
+│ ├── train.py # Training script
+│ ├── evaluate.py # Evaluation script
+│ └── visualize.py # Visualization script
 ├── configs/
-│   └── default_config.yaml # Default configuration
+│ └── default_config.yaml # Default configuration
 ├── notebooks/
-│   └── examples.ipynb     # Usage examples
+│ └── examples.ipynb # Usage examples
+├── requirements.txt
 └── README.md
-```
